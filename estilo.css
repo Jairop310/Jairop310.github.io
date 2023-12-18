@@ -1,0 +1,210 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0; /* Eliminar el margen para que no haya espacio entre los elementos */
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px; /* Espaciado entre los enlaces de redes sociales */
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: 30px; /* Ajusta la altura de las imágenes según sea necesario */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Agrega una transición de escala para suavizar el cambio */
+}
+
+a:hover {
+    transform: scale(1.1); /* Escala el elemento al pasar el ratón por encima */
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+        overflow-y: auto; /* Habilitamos el desplazamiento para el menú desplegable */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+    .nav li a {
+        color: #fff; /* Restablece el color de los enlaces en modo móvil */
+    }
+
+    .nav li a:hover {
+        color: #ffd700; /* Cambia el color al pasar el ratón en modo móvil */
+        transform: none; /* Restablece la escala en modo móvil */
+    }
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em; /* Ajusta el espaciado interno del header cuando está fijo */
+    background-color: #333;
+    z-index: 1000;
+}
+.nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al menú fijo */
+}
+.Logotipo{
+    width: 80px;
+    height: 80px;
+}
+.container-icons {
+    text-align: center;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.box-icon{
+    margin-left: 30px;
+}
